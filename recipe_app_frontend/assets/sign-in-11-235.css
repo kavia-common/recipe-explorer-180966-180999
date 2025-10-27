@@ -1,0 +1,24 @@
+#screen_sign_in_11_235 { position: relative; }
+
+/* z-index stacking by order in JSON to ensure overlaps if any */
+#el_13_71 { z-index: 1; }     /* Status Bar */
+#el_13_110 { z-index: 2; }    /* Title */
+#el_30_585 { z-index: 3; }    /* Email field */
+#el_30_590 { z-index: 4; }    /* Password field */
+#el_12_91  { z-index: 5; }    /* Forgot Password */
+#el_12_139 { z-index: 6; }    /* Or Sign in With */
+#el_13_35  { z-index: 7; }    /* Google Button */
+#el_13_49  { z-index: 8; }    /* Facebook Button */
+#el_54_668 { z-index: 9; }    /* Sign In Big Button */
+#el_13_67  { z-index: 10; }   /* Bottom Text */
+#el_42_614 { z-index: 11; }   /* Home Indicator */
+
+/* Button hover (optional interaction) */
+#el_54_668:hover {
+  filter: brightness(0.95);
+}
+
+/* Make small icons crisp */
+img[alt*="Vector"], img[alt*="Arrow"] {
+  image-rendering: -webkit-optimize-contrast;
+}
